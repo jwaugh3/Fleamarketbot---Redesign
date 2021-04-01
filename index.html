@@ -1,0 +1,182 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- Title -->
+    <title>FleaMarketBot - #1 Tarkov Twitch Bot</title>
+    <meta name="description" content="Escape From Tarkov Twitch Bot. Get EFT item prices in Twitch Chat!">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css"/>
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+     <!-- Favicon -->
+     <link rel="shortcut icon" href="favicon.ico">
+     <link rel="apple-touch-icon" type="image/png" href="Images/favicon.png">
+     <link rel="icon" size="192X192" type="image/png" href="Images/favicon.png">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <main id="main-bg">   
+             
+        <!-- main container -->
+        <div id="main" class="container-xl">
+
+            <!-- image -->
+            <div id="main-image-container">
+                <img id="main-image" src="./images/largeBg.png" alt="james waugh"/>
+            </div>
+
+            <!-- header -->
+            <div id="header-container" class="text-left">
+                <h1 id="header-name" class="text-left light-color">Fleamarketbot</h1>
+                <p id="header-sub-text" class="text-left light-color">Get prices fast and easy as you stream</p>
+                <p id="header-sub-text" class="text-left light-color">all while increasing chat engagement</p>
+                <button id="get-bot-btn" class="btn"><a href="https://www.patreon.com/bePatron?u=36663606" target="_blank">Get Fleamarketbot</a></button>
+            </div>
+
+            <div id="command-text-container">
+                <p id="command-text" class="light-color">Input Command:</p>
+                <p id="command-input">!price san 308</p>
+            </div>
+
+            <iframe id="chat_embed" src="https://www.twitch.tv/embed/fleamarketbot/chat?parent=127.0.0.1&darkpopout"></iframe>
+
+
+
+            <div id="try-it-container">
+                <img src="./images/tryit.png" alt='try it'/>
+            </div>
+
+        </div>
+    </main> 
+
+        <!-- Why use fleamarketbot -->
+        <div id="why-container" class="container-xl">
+            <h1 id="why-header" class="text-left light-color">Why use Fleamarketbot?</h1>
+            <p id="why-text" class="light-color">
+                With so many items in Escape from Tarkov it's hard to keep track of all of their prices.
+                Luckily, with Fleamarketbot you don't have to. Fleamarketbot allows chat to contribute 
+                to your raid by checking flea market and trader prices so you can stay focused on the game.
+            </p>
+        </div>
+
+        <!-- who uses fleamarketbot? -->
+        <div id="who-container" class="container-xl">
+            <p id="who-header" class="light-color">Who uses Fleamarketbot?</p>
+            <div id="who-container-box">
+                <div class="users-grid">
+                    <!-- user -->
+                    <div class="user-container">
+                        <div class="user-image-container"><img class="user-image" src="./images/alanzoka.png" alt="alanzoka"/></div>
+                        <p class="user-sub-text light-color">alanzoka</p>
+                    </div>
+
+                    <!-- user -->
+                    <div class="user-container">
+                        <div class="user-image-container"><img class="user-image" src="./images/break.png" alt="BreaK"/></div>
+                        <p class="user-sub-text light-color">BreaK</p>
+                    </div>
+
+                    <!-- user -->
+                    <div class="user-container">
+                        <div class="user-image-container"><img class="user-image" src="./images/drlupo.png" alt="DrLupo"/></div>
+                        <p class="user-sub-text light-color">DrLupo</p>
+                    </div>
+
+                    <!-- user -->
+                    <div class="user-container">
+                        <div class="user-image-container"><img class="user-image" src="./images/redopz.png" alt="RedOpz"/></div>
+                        <p class="user-sub-text light-color">RedOpz</p>
+                    </div>
+
+                    <!-- user -->
+                    <div class="user-container">
+                        <div class="user-image-container"><img class="user-image" src="./images/geekseh.png" alt="GeeksEh"/></div>
+                        <p class="user-sub-text light-color">GeeksEh</p>
+                    </div>
+                </div>
+
+                <div id="user-container-sub-text">
+                    <p id="user-count" class="text-right light-color">150+ more...</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Command Info -->
+        <div id="command-info-container" class="container-xl">
+            <div id="command-image-container">
+                <img id="command-image" src="images/info.png" al="command info"/>
+            </div>
+        </div>
+
+        <!-- what container -->
+        <div id="what-container" class="container-xl">
+            <h1 id="what-header" class="light-color">What can Fleamarketbot do?</h1>
+            <div id="container-grid">
+                <!-- commands -->
+                <div id="command-container">
+                    <p id="command-header" class="light-color">Commands</p>
+                    <div id="command-options-container">
+                        <!-- command -->
+                        <li class="command-option light-color">!price ['item name']</li>
+                        <p class="command-description light-color">Bot responds with the current flea market price of the item</p>
+
+                        <!-- command -->
+                        <li class="command-option light-color">- !trade ['item name']</li>
+                        <p class="command-description light-color">Bot responds with the best current trader price of the item</p>
+                        
+                        <!-- command -->
+                        <li class="command-option light-color">- !flea delay ['time in seconds']</li>
+                        <p class="command-description light-color">Bot only responds to commands every ['time in seconds']</p>
+
+                        <!-- command -->
+                        <li class="command-option light-color">- !flea modonly</li>
+                        <p class="command-description light-color">Bot only responds to mods</p>
+
+                        <!-- command -->
+                        <li class="command-option light-color">- !flea subonly</li>
+                        <p class="command-description light-color">Bot only responds to subs</p>
+
+                        <!-- command -->
+                        <li class="command-option light-color">- !flea allchat</li>
+                        <p class="command-description light-color">Bot responds to everyone</p>
+
+                        <!-- command -->
+                        <li class="command-option light-color">- !flea command</li>
+                        <p class="command-description light-color">Bot responds with all commands</p>
+                    </div>
+                </div>
+
+                <!-- divider -->
+                <div id="divider"></div>
+
+                <!-- about -->
+                <div id="about-container">
+                    <p id="about-text" class="text-left light-color">
+                        Fleamarketbot is a Twitch.tv chat bot
+                        that makes it easier for chat to interact
+                        and provide information to the streamer.
+                        By using simple commands in chat, you
+                        can get current Escape From Tarkov flea
+                        market and trader prices. Fleamarketbot 
+                        makes it fast and super simple to get
+                        accurate prices on all in-game items.
+                    </p>
+                    <button id="get-bot-btn" class="btn"><a href="https://www.patreon.com/bePatron?u=36663606" target="_blank">Get Fleamarketbot</a></button>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="footer">
+            <div class="button-container">
+                
+            </div>
+        </div>   
+</body>
+</html>

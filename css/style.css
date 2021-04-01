@@ -1,0 +1,506 @@
+body {
+	width: 100%;
+	font-family: 'Heebo', 'sans-serif';
+	background-color: #3c4046;
+	overflow-x: hidden;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+a:hover {
+	text-decoration: none;
+	color: inherit;
+}
+
+.light-color {
+	color: white;
+}
+
+.dark-color {
+	background-color: #2a2d31;
+}
+
+.accent-color {
+	background-color: #30ffb1;
+}
+
+#main-bg {
+	background-color: #2a2d31;
+	width: 100%;
+	box-shadow: 0px 3px 6px black;
+}
+
+#main {
+	position: relative;
+}
+
+/* main image */
+#main-image-container {
+	height: 100vh;
+	width: 100%;
+	position: relative;
+}
+
+/* header */
+#header-name {
+	font-weight: 600;
+	font-size: 48px;
+	margin: 0px;
+	line-height: 80%;
+}
+
+#header-sub-text {
+	font-weight: 300;
+	font-size: 20px;
+	margin: 0px;
+}
+
+#get-bot-btn {
+	margin-top: 8px;
+	background-color: 30FFB1;
+	font-size: 18px;
+	font-weight: 400;
+	box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.549);
+}
+
+/* why container */
+#why-container {
+	position: relative;
+	width: 100%;
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+
+#why-header {
+	font-weight: 400;
+	margin-left: 3%;
+}
+
+#why-text {
+	margin-left: 15px;
+	font-size: 20px;
+	font-weight: 300;
+	width: 90%;
+	margin: auto;
+}
+
+/* who uses fleamarketbot? */
+#who-container {
+	margin-top: 50px;
+	position: relative;
+	width: 100%;
+}
+
+#who-header {
+	font-size: 22px;
+	font-weight: 500;
+}
+
+#who-container-box {
+	padding: 20px;
+	box-shadow: 0px 3px 6px black;
+	background-color: #2a2d31;
+	width: 100%;
+	border-radius: 14px;
+	border-left: 14px solid #30ffb1;
+	position: relative;
+}
+
+.user-container {
+	margin: auto;
+}
+
+.user-image-container {
+	margin-top: 10px;
+}
+
+.user-image {
+	width: 95px;
+}
+
+.user-sub-text {
+	text-align: center;
+	margin-top: 8px;
+	font-size: 20px;
+	font-weight: 300;
+}
+
+#user-container-sub-text {
+	position: absolute;
+	height: 10%;
+	width: 86%;
+	bottom: 8px;
+}
+
+#user-count {
+	font-size: 18px;
+	font-weight: 400;
+}
+
+/* command info */
+#command-info-container {
+	width: 100%;
+	height: 200px;
+	margin-top: 40px;
+}
+
+#command-image {
+	width: 100%;
+	margin-top: 60px;
+}
+
+/* what container */
+#what-container {
+	margin-top: 50px;
+	width: 100%;
+}
+
+#what-header {
+	font-size: 40px;
+	font-weight: 400;
+}
+
+#command-container {
+	width: 80%;
+	background-color: #2a2d31;
+	border-radius: 14px;
+	border-top: 14px solid #30ffb1;
+	margin: auto;
+	box-shadow: 0px 3px 6px black;
+	min-width: 330px;
+	max-width: 430px;
+}
+
+#command-header {
+	font-size: 24px;
+	font-weight: 400;
+	margin-left: 20px;
+	margin-top: 15px;
+}
+
+#command-options-container {
+	width: 80%;
+	/* height: 100%; */
+	margin: auto;
+}
+
+.command-option {
+	font-size: 18px;
+	font-weight: 300;
+}
+
+.command-description {
+	font-size: 16px;
+	font-weight: 300;
+	margin-left: 42px;
+}
+
+/* about */
+#about-text {
+	font-size: 22px;
+	font-weight: 300;
+	margin-bottom: 0px;
+}
+
+/* footer */
+.footer {
+	width: 100%;
+	height: 120px;
+	background-color: #2a2d31;
+	margin-top: 80px;
+}
+
+/* small devices ( 576 and down) */
+@media screen and (max-width: 576px) {
+	#header-container {
+		height: 300px;
+		position: absolute;
+		top: 40%;
+	}
+
+	#main-image {
+		height: 100%;
+		position: absolute;
+		left: 0px;
+		opacity: .3;
+	}
+
+	#chat_embed {
+		display: none;
+	}
+
+	#try-it-container {
+		display: none;
+	}
+
+	#command-text-container {
+		display: none;
+	}
+
+	#command-text {
+		display: none;
+	}
+
+	#command-input {
+		display: none;
+	}
+
+	.users-grid {
+		width: 80%;
+		height: 100%;
+		margin: auto;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: repeat(3, 1fr);
+	}
+
+	#command-image-container {
+		width: 100%;
+		margin: auto;
+	}
+
+	#container-grid {
+		display: grid;
+		grid-template-rows: 49% 49%;
+	}
+
+	/* divider */
+	#divider {
+		display: none;
+	}
+
+	#about-container {
+		width: 75%;
+		margin: auto;
+		margin-top: 180px;
+	}
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media screen and (min-width: 577px) and (max-width: 768px) {
+	#header-container {
+		height: 300px;
+		position: absolute;
+		top: 40%;
+	}
+
+	#main-image {
+		height: 100%;
+		position: absolute;
+		left: 350px;
+		opacity: .3;
+		background-color: green;
+	}
+
+	#chat_embed {
+		display: none;
+	}
+
+	#try-it-container {
+		display: none;
+	}
+
+	#command-text-container {
+		display: none;
+	}
+
+	#command-text {
+		display: none;
+	}
+
+	#command-input {
+		display: none;
+	}
+
+	.users-grid {
+		width: 80%;
+		margin: auto;
+		display: grid;
+		grid-template-columns: repeat(5, 1fr);
+	}
+
+	#command-image-container {
+		width: 80%;
+		margin: auto;
+	}
+
+	#container-grid {
+		display: grid;
+		grid-template-rows: 49% 49%;
+	}
+
+	/* divider */
+	#divider {
+		display: none;
+	}
+
+	#about-container {
+		width: 75%;
+		margin: auto;
+		margin-top: 180px;
+	}
+}
+
+/* Large devices (desktops, 992px and up) */
+@media screen and (min-width: 769px) and (max-width: 992px) {
+	#header-container {
+		height: 300px;
+		position: absolute;
+		top: 40%;
+	}
+
+	#main-image {
+		height: 100%;
+		position: absolute;
+		left: 350px;
+		opacity: .3;
+		background-color: blue;
+	}
+
+	#chat_embed {
+		border-radius: 8px;
+		box-shadow: 0px 3px 6px black;
+		position: absolute;
+		top: 20vh;
+		right: 80px;
+		height: 550px;
+		width: 350px;
+	}
+
+	#try-it-container {
+		display: none;
+	}
+
+	#command-text-container {
+		position: absolute;
+		top: 60vh;
+		right: 440px;
+	}
+
+	#command-text {
+		font-size: 20px;
+		margin: 0px;
+		font-weight: 400;
+	}
+
+	#command-input {
+		font-size: 20px;
+		color: #30ffb1;
+		margin: 0px;
+		font-weight: 300;
+	}
+
+	.users-grid {
+		width: 80%;
+		margin: auto;
+		display: grid;
+		grid-template-columns: repeat(5, 1fr);
+	}
+
+	#command-image-container {
+		width: 60%;
+		margin: auto;
+	}
+
+	#container-grid {
+		display: grid;
+		grid-template-columns: 49% 2% 49%;
+	}
+
+	/* divider */
+	#divider {
+		height: 100%;
+		width: 1px;
+		background-color: #707070;
+	}
+
+	#about-container {
+		width: 75%;
+		margin: auto;
+		margin-top: 100px;
+	}
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media screen and (min-width: 993px) {
+	#header-container {
+		height: 300px;
+		position: absolute;
+		top: 40%;
+	}
+
+	#main-image {
+		height: 100%;
+		position: absolute;
+		left: 350px;
+		opacity: .3;
+	}
+
+	#chat_embed {
+		border-radius: 8px;
+		box-shadow: 0px 3px 6px black;
+		position: absolute;
+		top: 300px;
+		right: 0px;
+		height: 550px;
+		width: 350px;
+	}
+
+	#try-it-container {
+		position: absolute;
+		top: 20%;
+		right: -300px;
+	}
+
+	#command-text-container {
+		position: absolute;
+		top: 750px;
+		right: 380px;
+	}
+
+	#command-text {
+		font-size: 20px;
+		margin: 0px;
+		font-weight: 400;
+	}
+
+	#command-input {
+		font-size: 20px;
+		color: #30ffb1;
+		margin: 0px;
+		font-weight: 300;
+	}
+
+	.users-grid {
+		width: 80%;
+		margin: auto;
+		display: grid;
+		grid-template-columns: repeat(5, 1fr);
+	}
+
+	#command-image-container {
+		width: 40%;
+		margin: auto;
+	}
+
+	#container-grid {
+		display: grid;
+		grid-template-columns: 49% 2% 49%;
+	}
+
+	/* divider */
+	#divider {
+		height: 100%;
+		width: 1px;
+		background-color: #707070;
+	}
+
+	#about-container {
+		width: 75%;
+		margin: auto;
+		margin-top: 100px;
+	}
+}
