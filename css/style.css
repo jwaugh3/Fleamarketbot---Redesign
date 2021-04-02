@@ -8,6 +8,7 @@ body {
 a {
 	text-decoration: none;
 	color: inherit;
+	cursor: pointer;
 }
 
 a:hover {
@@ -123,9 +124,11 @@ a:hover {
 
 .user-sub-text {
 	text-align: center;
+	margin: 0px;
 	margin-top: 8px;
 	font-size: 20px;
 	font-weight: 300;
+	text-align: center;
 }
 
 #user-container-sub-text {
